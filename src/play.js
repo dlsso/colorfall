@@ -99,15 +99,21 @@ Game.Play.prototype = {
     generatePlatform: function (y) {
 	suffix = '';
 	rand = Math.floor(Math.random() * 1000);
-	if (rand == 69) {
+	if (rand > 100) {
 	    suffix = '2';
+	}
+	else if (rand > 400) {
+	    suffix = '3';
+	}
+	else if (rand > 700) {
+	    suffix = '4';
 	}
 
 	var x = -1;
 	while (x < 0 || x > (w / 20 - 4)) {
 	    x = variance - Math.floor(Math.random() * (2 * variance + 1)) + marker;
 	}
-	this.createPlatform(x, y, 4, suffix);
+	this.createPlatform(x, y, 20, suffix);
 	marker = x;
     },
 
