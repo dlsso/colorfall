@@ -87,7 +87,7 @@ Game.Play.prototype = {
 
 	if(cursors.down.isDown){
 		// if(player.sprite === 'player')
-		console.log(player.body)
+		console.log(player)
 		player.loadTexture('player2', 1)
 	}
 
