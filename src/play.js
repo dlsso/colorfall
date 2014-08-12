@@ -99,13 +99,13 @@ Game.Play.prototype = {
     generatePlatform: function (y) {
 	suffix = '';
 	rand = Math.floor(Math.random() * 1000);
-	if (rand > 700 ) {
+	if (rand > 100 && rand <=400) {
 	    suffix = '2';
 	}
-	else if (rand > 400) {
+	else if (rand > 400 && rand <=700) {
 	    suffix = '3';
 	}
-	else if (rand > 100) {
+	else if (rand > 700) {
 	    suffix = '4';
 	}
 
