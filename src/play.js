@@ -61,7 +61,7 @@ Game.Play.prototype = {
 	bgGreen = 204;
 	bgBlue = 255;
 
-	cursors.down.onDown.add(Game.Menu.prototype.toggleAudio, this);
+	cursors.up.onDown.add(Game.Menu.prototype.toggleAudio, this);
     },
 
     update: function () {
@@ -117,7 +117,7 @@ Game.Play.prototype = {
 	while (x < 0 || x > (w / 20 - 4)) {
 		x = Math.floor(Math.random()*w)
 	}
-	
+
 	this.createPlatform(x, y, 20, suffix);
 	marker = x;
     },
