@@ -62,7 +62,7 @@ Game.Play.prototype = {
 	bgBlue = 255;
 
 	cursors.up.onDown.add(Game.Menu.prototype.toggleAudio, this);
-	cursors.down.onDown.add(player.loadTexture('player2', 1));
+	cursors.down.onDown(player.loadTexture('player2', 1));
     },
 
     update: function () {
