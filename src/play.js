@@ -7,7 +7,7 @@ var increase = 1.008;
 var bgRed;
 var bgGreen;
 var bgBlue;
-var updateCounter
+var updateCounter = 0
 
 Game.Play.prototype = {
     create: function () {
