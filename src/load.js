@@ -18,7 +18,12 @@ Game.Load.prototype = {
 	// load everything
 	game.load.image('platform', 'assets/img/platform.png');
 	game.load.image('platform2', 'assets/img/platform2.png');
+	game.load.image('platform3', 'assets/img/platform3.png');
+	game.load.image('platform4', 'assets/img/platform4.png');
 	game.load.spritesheet('player', 'assets/img/player.png', 20, 18, 3);
+	game.load.spritesheet('player2', 'assets/img/player2.png', 20, 18, 3);
+	game.load.spritesheet('player3', 'assets/img/player3.png', 20, 18, 3);
+	game.load.spritesheet('player4', 'assets/img/player4.png', 20, 18, 3);
 
 	game.load.audio('music', 'assets/aud/Half\ Bit.mp3');
 	music = game.add.sound('music');
