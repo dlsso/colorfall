@@ -52,9 +52,9 @@ Game.Play.prototype = {
 	platformVelocity = -100;
 
 	score = 0;	
- 	scoreText = game.add.text(w - 10, 10, 'score: ' + score, { font: '20px Arial', fill: '#aaa' });
+ 	scoreText = game.add.text(w - 10, 10, 'score: ' + score, { font: '20px Arial', fill: '#333' });
 	scoreText.anchor.setTo(1, 0);
-	bestText = game.add.text(w - 10, 30, 'best: ' + bestScore, { font: '20px Arial', fill: '#aaa' });
+	bestText = game.add.text(w - 10, 30, 'best: ' + bestScore, { font: '20px Arial', fill: '#333' });
 	bestText.anchor.setTo(1, 0);
 
 	bgRed = 170;

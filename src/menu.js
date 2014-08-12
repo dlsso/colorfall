@@ -13,7 +13,7 @@ Game.Menu.prototype = {
 	
 	cursors = game.input.keyboard.createCursorKeys();
 
-	title = game.add.text(w / 3, h, 'Colorfall', { font: '100px Arial', fill: '#' });
+	title = game.add.text(w / 3, h, 'Colorfall', { font: '100px Arial', fill: '#393' });
 	title.anchor.setTo(0.5, 0);
 	game.add.tween(title).to({ y: 5 }, 750, null, true, 0, 0, false);
 
