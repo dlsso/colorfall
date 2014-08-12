@@ -89,15 +89,19 @@ Game.Play.prototype = {
 	if(cursors.down.isDown && updateCounter > 200){
 		if(player.key === 'player') {
 			player.loadTexture('player2', 1)
+			updateCounter = 0
 		}
 		else if(player.key === 'player2') {
 			player.loadTexture('player3', 1)
+			updateCounter = 0
 		}
 		else if(player.key === 'player3') {
 			player.loadTexture('player4', 1)
+			updateCounter = 0
 		}
 		else if(player.key === 'player4') {
 			player.loadTexture('player2', 1)
+			updateCounter = 0
 		}
 	}
 	updateCounter++
