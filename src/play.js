@@ -86,9 +86,11 @@ Game.Play.prototype = {
 	}
 
 	if(cursors.down.isDown){
+		// if(player.sprite === 'player')
+		console.log(player.body)
 		player.loadTexture('player2', 1)
 	}
-	
+
 	platforms.setAll('body.velocity.y', platformVelocity);
 	scoreText.text = 'score: ' + score;
 	bestText.text = 'best: ' + bestScore;
