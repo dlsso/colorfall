@@ -13,11 +13,11 @@ Game.Menu.prototype = {
 	
 	cursors = game.input.keyboard.createCursorKeys();
 
-	title = game.add.text(w / 3, h, 'Colorfall', { font: '100px Arial', fill: '#3e3' });
+	title = game.add.text(w / 3, h, 'Colorfall', { font: '100px Arial', fill: '#393' });
 	title.anchor.setTo(0.5, 0);
 	game.add.tween(title).to({ y: 5 }, 750, null, true, 0, 0, false);
 
-	by = game.add.text(w / 2 + 18, h, 'a twist on Skylifts from Christopher Hinstorff', { font: '24px Arial', fill: '#eae' });
+	by = game.add.text(w / 2 + 18, h, 'a twist on Skylifts from Christopher Hinstorff', { font: '24px Arial', fill: '#f35' });
 	by.anchor.setTo(0.5, 0);
 	game.add.tween(by).to({ y: 96 }, 500, null, true, 500, 0, false);
 
@@ -59,13 +59,13 @@ Game.Menu.prototype = {
 	player.body.gravity.y = 1000;
 	player.frame = 1;
 	
-	controls = game.add.text(w / 2, -400, 'LEFT and RIGHT to move\nDOWN to begin', { font: '20px Arial', fill: '#f35', align: 'center' });
+	controls = game.add.text(w / 2, -400, 'LEFT and RIGHT to move\nDOWN to begin', { font: '20px Arial', fill: '#fe5', align: 'center' });
 	controls.anchor.setTo(0.472, 1);
 
-	scoreText = game.add.text(w - 10, 10, 'score: ' + score, { font: '20px Arial', fill: '#333' });
+	scoreText = game.add.text(w - 10, 10, 'score: ' + score, { font: '20px Arial', fill: '#000' });
 	scoreText.anchor.setTo(1, 0);
 	scoreText.alpha = 0; 
-	bestText = game.add.text(w - 10, 30, 'best: ' + bestScore, { font: '20px Arial', fill: '#333' });
+	bestText = game.add.text(w - 10, 30, 'best: ' + bestScore, { font: '20px Arial', fill: '#000' });
 	bestText.anchor.setTo(1, 0);
 	bestText.alpha = 0;
 	if (!firstTime) {    
