@@ -89,13 +89,13 @@ Game.Play.prototype = {
 		if(player.key === 'player') {
 			player.loadTexture('player2', 1)
 		}
-		if(player.key === 'player2') {
+		else if(player.key === 'player2') {
 			player.loadTexture('player3', 1)
 		}
-		if(player.key === 'player3') {
+		else if(player.key === 'player3') {
 			player.loadTexture('player4', 1)
 		}
-		if(player.key === 'player4') {
+		else if(player.key === 'player4') {
 			player.loadTexture('player2', 1)
 		}
 	}
