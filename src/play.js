@@ -62,7 +62,6 @@ Game.Play.prototype = {
 	bgBlue = 255;
 
 	cursors.up.onDown.add(Game.Menu.prototype.toggleAudio, this);
-
     },
 
     update: function () {
@@ -88,16 +87,6 @@ Game.Play.prototype = {
 	platforms.setAll('body.velocity.y', platformVelocity);
 	scoreText.text = 'score: ' + score;
 	bestText.text = 'best: ' + bestScore;
-
-	cursors.down.onDown(
-		player = game.add.sprite(player.x, player.y, 'player2')
-		player.anchor.setTo(0.5, 1);
-		game.physics.arcade.enable(player);
-		player.body.gravity.y = 1000;
-		player.inAir = true;
-		player.frame = 1;
-	)
-
     },
 
     createPlatform: function (x, y, width, suffix) {
