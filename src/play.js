@@ -107,7 +107,7 @@ Game.Play.prototype = {
     		else if(player.key === 'player4') {
     			player.loadTexture('player2', 1)
     		}
-    }
+    },
 
     createPlatform: function (x, y, width, suffix) {
 	platform = platforms.create(x * 20, h - y * 20, 'platform' + suffix);
