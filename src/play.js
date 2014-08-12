@@ -110,9 +110,11 @@ Game.Play.prototype = {
 	}
 
 	var x = -1;
-	while (x < 0 || x > (w / 20 - 4)) {
-	    x = variance - Math.floor(Math.random() * (2 * variance + 1)) + marker;
-	}
+	// while (x < 0 || x > (w / 20 - 4)) {
+	//     x = variance - Math.floor(Math.random() * (2 * variance + 1)) + marker;
+	// }
+	// Changed random x function
+	x = Math.floor(Math.random()*w)
 	this.createPlatform(x, y, 20, suffix);
 	marker = x;
     },
