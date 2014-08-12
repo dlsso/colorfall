@@ -86,7 +86,7 @@ Game.Play.prototype = {
 	    player.inAir = true;
 	}
 
-	if(cursors.down.isDown){
+	if(cursors.down.isDown && updateCounter > 200){
 		if(player.key === 'player') {
 			player.loadTexture('player2', 1)
 		}
@@ -101,7 +101,6 @@ Game.Play.prototype = {
 		}
 	}
 	updateCounter++
-	console.log("updateCounter:", updateCounter)
 
 	platforms.setAll('body.velocity.y', platformVelocity);
 	scoreText.text = 'score: ' + score;
