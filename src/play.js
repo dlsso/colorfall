@@ -86,9 +86,9 @@ Game.Play.prototype = {
 	}
 
 	if(cursors.down.isDown){
-		// if(player.sprite === 'player')
-		console.log(player)
-		player.loadTexture('player2', 1)
+		if(player.key === 'player') {
+			player.loadTexture('player2', 1)
+		}
 	}
 
 	platforms.setAll('body.velocity.y', platformVelocity);
