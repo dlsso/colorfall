@@ -62,9 +62,7 @@ Game.Play.prototype = {
 	bgBlue = 255;
 
 	cursors.up.onDown.add(Game.Menu.prototype.toggleAudio, this);
-	if(cursors.down.isDown){
-		player.loadTexture('player2', 1)
-	}
+
     },
 
     update: function () {
@@ -87,6 +85,10 @@ Game.Play.prototype = {
 	    player.inAir = true;
 	}
 
+	if(cursors.down.isDown){
+		player.loadTexture('player2', 1)
+	}
+	
 	platforms.setAll('body.velocity.y', platformVelocity);
 	scoreText.text = 'score: ' + score;
 	bestText.text = 'best: ' + bestScore;
