@@ -85,25 +85,29 @@ Game.Play.prototype = {
 	    player.inAir = true;
 	}
 
-	if(cursors.down.isDown){
-		if(player.key === 'player') {
-			player.loadTexture('player2', 1)
-		}
-		else if(player.key === 'player2') {
-			player.loadTexture('player3', 1)
-		}
-		else if(player.key === 'player3') {
-			player.loadTexture('player4', 1)
-		}
-		else if(player.key === 'player4') {
-			player.loadTexture('player2', 1)
-		}
+	if(cursors.down.isDown) {
+		this.changeColor
 	}
 
 	platforms.setAll('body.velocity.y', platformVelocity);
 	scoreText.text = 'score: ' + score;
 	bestText.text = 'best: ' + bestScore;
     },
+
+    changeColor: function() {
+    		if(player.key === 'player') {
+    			player.loadTexture('player2', 1)
+    		}
+    		else if(player.key === 'player2') {
+    			player.loadTexture('player3', 1)
+    		}
+    		else if(player.key === 'player3') {
+    			player.loadTexture('player4', 1)
+    		}
+    		else if(player.key === 'player4') {
+    			player.loadTexture('player2', 1)
+    		}
+    }
 
     createPlatform: function (x, y, width, suffix) {
 	platform = platforms.create(x * 20, h - y * 20, 'platform' + suffix);
