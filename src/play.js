@@ -99,10 +99,9 @@ Game.Play.prototype = {
 		else if(player.key === 'player4') {
 			player.loadTexture('player2', 1)
 		}
-
+	}
 	updateCounter++
 	console.log("updateCounter:", updateCounter)
-	}
 
 	platforms.setAll('body.velocity.y', platformVelocity);
 	scoreText.text = 'score: ' + score;
