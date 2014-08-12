@@ -13,11 +13,11 @@ Game.Menu.prototype = {
 	
 	cursors = game.input.keyboard.createCursorKeys();
 
-	title = game.add.text(w / 3, h, 'Skylifts', { font: '100px Arial', fill: '#aaaaaa' });
+	title = game.add.text(w / 3, h, 'Colorfall', { font: '100px Arial', fill: '#aaaaaa' });
 	title.anchor.setTo(0.5, 0);
 	game.add.tween(title).to({ y: 5 }, 750, null, true, 0, 0, false);
 
-	by = game.add.text(w / 2 + 18, h, 'by Christopher Hinstorff', { font: '24px Arial', fill: '#aaaaaa' });
+	by = game.add.text(w / 2 + 18, h, 'a twist on Skylifts from Christopher Hinstorff', { font: '24px Arial', fill: '#aaaaaa' });
 	by.anchor.setTo(0.5, 0);
 	game.add.tween(by).to({ y: 96 }, 500, null, true, 500, 0, false);
 
@@ -34,14 +34,14 @@ Game.Menu.prototype = {
 	rightSide.body.immovable = true;
 	rightSide.scale.setTo(20, 1);
 
-	attr = game.add.text(w - 10, h - 18, 'music: "Half Bit" by Kevin Macleod (incompetech.com)', { font: '12px Arial', fill: '#aaccff' });
+	attr = game.add.text(w - 10, h - 18, 'music: author here', { font: '12px Arial', fill: '#aaccff' });
 	attr.anchor.setTo(1, 0);
 	attr.alpha = 0;
 	if (audio) {
 	    game.add.tween(attr).to({ alpha: 1 }, 400, null, true, 1200, 0, false);
 	}
 
-	toggleMusic = game.add.text(20, h - 18, 'Toggle music with DOWN', { font: '12px Arial', fill: '#aaccff' });
+	toggleMusic = game.add.text(20, h - 18, 'Toggle music with UP', { font: '12px Arial', fill: '#aaccff' });
 	toggleMusic.anchor.setTo(0, 0);
 	toggleMusic.alpha  = 0;
 	game.add.tween(toggleMusic).to({ alpha: 1 }, 400, null, true, 1200, 0, false);
@@ -59,7 +59,7 @@ Game.Menu.prototype = {
 	player.body.gravity.y = 1000;
 	player.frame = 1;
 	
-	controls = game.add.text(w / 2, -400, 'Move with LEFT and RIGHT arrow keys\nPress UP to begin', { font: '20px Arial', fill: '#aaaaaa', align: 'center' });
+	controls = game.add.text(w / 2, -400, 'LEFT and RIGHT to move\nDOWN to begin', { font: '20px Arial', fill: '#aaaaaa', align: 'center' });
 	controls.anchor.setTo(0.472, 1);
 
 	scoreText = game.add.text(w - 10, 10, 'score: ' + score, { font: '20px Arial', fill: '#aaa' });
@@ -73,7 +73,7 @@ Game.Menu.prototype = {
 	    game.add.tween(bestText).to({ alpha: 1 }, 400, null, true, 1200, 0, false);
 	}
 
-	cursors.down.onDown.add(this.toggleAudio, this);
+	cursors.up.onDown.add(this.toggleAudio, this);
     },
 
     update: function () {
@@ -106,15 +106,15 @@ Game.Menu.prototype = {
 
     desktopControls: function () {
 	if (cursors.left.isDown) {
-	    player.body.velocity.x = -150;
+	    player.body.velocity.x = -250;
 	    player.frame = 0;
 	}
 	else if (cursors.right.isDown) {
-	    player.body.velocity.x = 150;
+	    player.body.velocity.x = 250;
 	    player.frame = 2;
 	}
 
-	if (cursors.up.isDown && timer == 0) {
+	if (cursors.down.isDown && timer == 0) {
 	    this.startGame();
 	}
     },
