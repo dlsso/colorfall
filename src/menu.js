@@ -106,11 +106,11 @@ Game.Menu.prototype = {
 
     desktopControls: function () {
 	if (cursors.left.isDown) {
-	    player.body.velocity.x = -250;
+	    player.body.velocity.x = -400;
 	    player.frame = 0;
 	}
 	else if (cursors.right.isDown) {
-	    player.body.velocity.x = 250;
+	    player.body.velocity.x = 400;
 	    player.frame = 2;
 	}
 
