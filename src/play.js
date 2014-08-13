@@ -151,8 +151,8 @@ Game.Play.prototype = {
 	}
 
 	this.createPlatform(x, y, 20, suffix);
-	this.createPlatform(x+15, y, 20, suffix);
-	this.createPlatform(x-15, y, 20, suffix);
+	this.createPlatform(x+25, y, 20, suffix);
+	this.createPlatform(x-25, y, 20, suffix);
 	marker = x;
     },
 
