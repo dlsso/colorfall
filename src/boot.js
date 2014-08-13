@@ -1,7 +1,8 @@
 Game = {};
-
-var w = 600;
-var h = 400;
+var w = window.innerWidth * window.devicePixelRatio;
+var h = window.innerHeight * window.devicePixelRatio;
+// var w = 600;
+// var h = 400;
 
 var score = 0;
 var bestScore = 0;
