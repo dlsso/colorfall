@@ -94,7 +94,7 @@ Game.Play.prototype = {
 			updateCounter = 0
 		}
 		else if(player.key === 'player2') {
-			if(player.inAir === false && platformName === 'platform2') { player.y = player.y + 7}	
+			if(player.inAir === false) { player.y = player.y + 7}	
 			player.loadTexture('player3', 1)
 			updateCounter = 0
 		}
@@ -172,6 +172,7 @@ Game.Play.prototype = {
 	    game.add.tween(player.scale).to({x: 1, y: 0.8}, 50, null, true, 0, false, false).to({x: 1, y: 1}, 200, null, true, 0, false, false);
 	}
 	platformName = platform.key
+	console.log("platformName:", platformName)
     },
     
     updateBackground: function () {
