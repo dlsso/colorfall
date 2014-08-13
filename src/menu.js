@@ -34,7 +34,7 @@ Game.Menu.prototype = {
 	rightSide.body.immovable = true;
 	rightSide.scale.setTo(20, 1);
 
-	attr = game.add.text(w - 10, h - 18, 'music: author here', { font: '12px Arial', fill: '#aaccff' });
+	attr = game.add.text(w - 10, h - 18, 'music: Atlantis by Pianochcolate', { font: '12px Arial', fill: '#aaccff' });
 	attr.anchor.setTo(1, 0);
 	attr.alpha = 0;
 	if (audio) {

@@ -183,7 +183,7 @@ Game.Play.prototype = {
     
     updateBackground: function () {
 	if (score < 11) {
-	    // #aaccff 5ever
+	    // #aaccff 4ever
 	}
 	else if (score < 36) {
 	    bgBlue -= 2;
@@ -195,42 +195,18 @@ Game.Play.prototype = {
 	    bgGreen -= 2;
 	}
 	else if (score < 86) {
-	    // bgBlue += 1;
 	    bgRed -= 3;
 	    bgGreen += 2;
 	}
 	else if (score < 111) {
 	    bgBlue += 1;
-	    // bgRed += 3;
 	    bgGreen -= 2;
 	}
 	else if (score < 136) {
 	    bgBlue -= 2;
 	    bgRed += 2;
-	    bgGreen += 2;
+	    bgGreen += 1;
 	}
-	// else {
-	//     if (bgRed > 35) {
-	// 	bgRed -= 2;
-	//     }
-	//     else {
-	// 	bgRed = 34;
-	//     }
-
-	//     if (bgGreen > 35) {
-	// 	bgGreen -= 2;
-	//     }
-	//     else {
-	// 	bgGreen = 34;
-	//     }
-
-	//     if (bgBlue > 35) {
-	// 	bgBlue -= 2;
-	//     }
-	//     else {
-	// 	bgBlue = 34;
-	//     }
-	// }
 
 	console.log("bgRed, bgGreen, bgBlue:", bgRed, bgGreen, bgBlue)
 
