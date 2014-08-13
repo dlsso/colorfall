@@ -194,12 +194,12 @@ Game.Play.prototype = {
 	    bgRed += 3;
 	    bgGreen -= 2;
 	}
-	else if (score < 91) {
+	else if (score < 86) {
 	    // bgBlue += 1;
 	    bgRed -= 3;
 	    bgGreen += 2;
 	}
-	else if (score < 121) {
+	else if (score < 111) {
 	    bgBlue += 1;
 	    // bgRed += 3;
 	    bgGreen -= 2;
