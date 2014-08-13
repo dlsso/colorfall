@@ -90,7 +90,7 @@ Game.Play.prototype = {
 	    player.inAir = true;
 	}
 
-	if(cursors.down.isDown && updateCounter > 40){
+	if(cursors.down.isDown && updateCounter > 100){
 		if(player.key === 'player') {
 			player.loadTexture('player2', 1)
 			updateCounter = 0
@@ -98,23 +98,26 @@ Game.Play.prototype = {
 		else if(player.key === 'player2') {
 			if(player.inAir === false && platformName === 'platform2') {
 				player.y = player.y + 5 - platformVelocity/10
-			}	
+				updateCounter = 0
+			}
+			else {updateCounter = 90}
 			player.loadTexture('player3', 1)
-			updateCounter = 0
 		}
 		else if(player.key === 'player3') {
 			if(player.inAir === false && platformName === 'platform3') {
 				player.y = player.y + 5 - platformVelocity/10
+				updateCounter = 0
 			}
+			else {updateCounter = 90}
 			player.loadTexture('player4', 1)
-			updateCounter = 0
 		}
 		else if(player.key === 'player4') {
 			if(player.inAir === false && platformName === 'platform4') {
 				player.y = player.y + 5 - platformVelocity/10
+				updateCounter = 0
 			}
+			else{updateCounter = 90}
 			player.loadTexture('player2', 1)
-			updateCounter = 0
 		}
 	}
 	updateCounter++
@@ -145,10 +148,6 @@ Game.Play.prototype = {
 	}
 
 	var x = -1;
-	// while (x < 0 || x > (w / 20 - 4)) {
-	//     x = variance - Math.floor(Math.random() * (2 * variance + 1)) + marker;
-	// }
-	// Changed random x function
 	while (x < 0 || x > (w / 20 - 4)) {
 		x = Math.floor(Math.random()*w)
 	}
@@ -221,7 +220,7 @@ Game.Play.prototype = {
    //  	if(updateCounter>100){
    //  		score +=5
    //  		updateCounter = 0
-    		
+
 		 //    if (score > bestScore) {
 			// bestScore = score;
 		 //    }
