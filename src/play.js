@@ -127,7 +127,7 @@ Game.Play.prototype = {
 		}
 	}
 	updateCounter++
-	if(updateCounter>180 && player.key === 'player') {player.key = 'player2'}
+	if(updateCounter>180 && player.key === 'player') {player.loadTexture = 'player2'}
 
 	platforms.setAll('body.velocity.y', platformVelocity);
 	scoreText.text = 'score: ' + score;
