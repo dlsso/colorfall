@@ -1,8 +1,8 @@
 Game = {};
-var w = window.innerWidth * window.devicePixelRatio;
-var h = window.innerHeight * window.devicePixelRatio;
-// var w = 600;
-// var h = 400;
+// var w = window.innerWidth * window.devicePixelRatio;
+// var h = window.innerHeight * window.devicePixelRatio;
+var w = 600;
+var h = 400;
 
 var score = 0;
 var bestScore = 0;
@@ -25,7 +25,7 @@ Game.Boot.prototype = {
     
     create: function () {
 	if (!game.device.desktop) {
-	    this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
+	    this.scale.scaleMode = Phaser.ScaleManager.EXACT_FIT;
 	    this.scale.minWidth = 480;
 	    this.scale.minHeight = 320;
 	    this.scale.maxWidth = 1152;
