@@ -221,6 +221,10 @@ Game.Play.prototype = {
     	if(updateCounter>100){
     		score +=5
     		updateCounter = 0
+    		
+		    if (score > bestScore) {
+			bestScore = score;
+		    }
     	}
     },
 
