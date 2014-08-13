@@ -24,7 +24,7 @@ Game.Boot.prototype = {
     },
     
     create: function () {
-	// if (!game.device.desktop) {
+	if (!game.device.desktop) {
 	    this.scale.scaleMode = Phaser.ScaleManager.EXACT_FIT;
 	    this.scale.minWidth = 480;
 	    this.scale.minHeight = 320;
@@ -38,7 +38,7 @@ Game.Boot.prototype = {
             this.scale.leaveIncorrectOrientation.add(this.leaveIncorrectOrientation, this);
             this.scale.setScreenSize(true);
 	    this.scale.startFullScreen(true);
-	// }
+	}
 
 	game.state.start('Load');
     }, 

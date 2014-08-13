@@ -99,6 +99,7 @@ Game.Play.prototype = {
 			if(player.inAir === false && platformName === 'platform2') {
 				player.y = player.y + 5 - platformVelocity/10
 				updateCounter = 0
+				player.loadTexture('player', 1)
 			}
 			else {updateCounter = 170}
 			player.loadTexture('player3', 1)
@@ -107,6 +108,7 @@ Game.Play.prototype = {
 			if(player.inAir === false && platformName === 'platform3') {
 				player.y = player.y + 5 - platformVelocity/10
 				updateCounter = 0
+				player.loadTexture('player', 1)
 			}
 			else {updateCounter = 170}
 			player.loadTexture('player4', 1)
@@ -115,6 +117,7 @@ Game.Play.prototype = {
 			if(player.inAir === false && platformName === 'platform4') {
 				player.y = player.y + 5 - platformVelocity/10
 				updateCounter = 0
+				player.loadTexture('player', 1)
 			}
 			else{updateCounter = 170}
 			player.loadTexture('player2', 1)
