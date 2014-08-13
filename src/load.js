@@ -25,7 +25,7 @@ Game.Load.prototype = {
 	game.load.spritesheet('player3', 'assets/img/player3.png', 20, 18, 3);
 	game.load.spritesheet('player4', 'assets/img/player4.png', 20, 18, 3);
 
-	game.load.audio('music', 'assets/aud/Half\ Bit.mp3');
+	game.load.audio('music', 'assets/aud/Atlantis.mp3');
 	music = game.add.sound('music');
     },
 

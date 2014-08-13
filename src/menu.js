@@ -110,7 +110,7 @@ Game.Menu.prototype = {
 	    player.frame = 0;
 	}
 	else if (cursors.right.isDown) {
-	    player.body.velocity.x = 700;
+	    player.body.velocity.x = 500;
 	    player.frame = 2;
 	}
 
