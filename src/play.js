@@ -86,12 +86,13 @@ Game.Play.prototype = {
 	    player.inAir = true;
 	}
 
-	if(cursors.down.isDown && updateCounter > 200){
+	if(cursors.down.isDown && updateCounter > 60){
 		if(player.key === 'player') {
 			player.loadTexture('player2', 1)
 			updateCounter = 0
 		}
 		else if(player.key === 'player2') {
+			game.physics.arcade.collide(player, platforms, this.deletePlatform, null, this);
 			player.loadTexture('player3', 1)
 			updateCounter = 0
 		}
