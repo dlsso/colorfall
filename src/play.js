@@ -89,13 +89,10 @@ Game.Play.prototype = {
 
 	if(cursors.down.isDown && updateCounter > 60){
 		if(player.key === 'player') {
-			// if(player.inAir === false && platformName === 'platform') {
-			// 	player.y = player.y + 5 - platformVelocity/10
-			// }
 			player.loadTexture('player2', 1)
 			updateCounter = 0
 		}
-		if(player.key === 'player2') {
+		else if(player.key === 'player2') {
 			if(player.inAir === false && platformName === 'platform2') {
 				player.y = player.y + 5 - platformVelocity/10
 			}	
