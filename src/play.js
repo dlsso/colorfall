@@ -88,22 +88,22 @@ Game.Play.prototype = {
 
 	if(cursors.down.isDown && updateCounter > 60){
 		if(player.key === 'player') {
-			if(player.inAir === false) { player.y = player.y + 30}
+			if(player.inAir === false) { player.y = player.y + 5}
 			player.loadTexture('player2', 1)
 			updateCounter = 0
 		}
 		else if(player.key === 'player2') {
-			if(player.inAir === false) { player.y = player.y + 30}	
+			if(player.inAir === false) { player.y = player.y + 5}	
 			player.loadTexture('player3', 1)
 			updateCounter = 0
 		}
 		else if(player.key === 'player3') {
-			if(player.inAir === false) { player.y = player.y + 15}
+			if(player.inAir === false) { player.y = player.y + 5}
 			player.loadTexture('player4', 1)
 			updateCounter = 0
 		}
 		else if(player.key === 'player4') {
-			if(player.inAir === false) { player.y = player.y + 30}
+			if(player.inAir === false) { player.y = player.y + 5}
 			player.loadTexture('player2', 1)
 			updateCounter = 0
 		}
