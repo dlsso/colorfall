@@ -25,18 +25,20 @@ Game.Boot.prototype = {
     create: function () {
 	if (!game.device.desktop) {
 	    this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
-	    this.scale.minWidth = 480;
-	    this.scale.minHeight = 320;
-	    this.scale.maxWidth = 1152;
-	    this.scale.maxHeight = 768;
-            this.scale.pageAlignHorizontally = true;
-            this.scale.pageAlignVertically = true;
-            this.scale.forceOrientation(true, false);
-            this.scale.hasResized.add(this.gameResized, this);
-            this.scale.enterIncorrectOrientation.add(this.enterIncorrectOrientation, this);
-            this.scale.leaveIncorrectOrientation.add(this.leaveIncorrectOrientation, this);
-            this.scale.setScreenSize(true);
-	    this.scale.startFullScreen(true);
+	    // this.scale.minWidth = 480;
+	    // this.scale.minHeight = 320;
+	    // this.scale.maxWidth = 1152;
+	    // this.scale.maxHeight = 768;
+     //        this.scale.pageAlignHorizontally = true;
+     //        this.scale.pageAlignVertically = true;
+     //        this.scale.forceOrientation(true, false);
+     //        this.scale.hasResized.add(this.gameResized, this);
+     //        this.scale.enterIncorrectOrientation.add(this.enterIncorrectOrientation, this);
+     //        this.scale.leaveIncorrectOrientation.add(this.leaveIncorrectOrientation, this);
+     //        this.scale.setScreenSize(true);
+	    // this.scale.startFullScreen(true);
+        this.scale.setShowAll()
+        this.scale.refresh()
 	}
 
 	game.state.start('Load');
