@@ -66,7 +66,7 @@ Game.Play.prototype = {
 	bgBlue = 255;
 
 	cursors.up.onDown.add(Game.Menu.prototype.toggleAudio, this);
-	bottom = this.createPlatform(0, h+30, w, '2')
+	bottom = this.createPlatform(marker, y, 8, '2')
     },
 
     update: function () {
