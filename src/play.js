@@ -101,8 +101,9 @@ Game.Play.prototype = {
 				updateCounter = 0
 				player.loadTexture('player', 1)
 			}
-			else {updateCounter = 170}
-			player.loadTexture('player3', 1)
+			else {updateCounter = 170
+				player.loadTexture('player3', 1)
+			}
 		}
 		else if(player.key === 'player3') {
 			if(player.inAir === false && platformName === 'platform3') {
@@ -110,8 +111,9 @@ Game.Play.prototype = {
 				updateCounter = 0
 				player.loadTexture('player', 1)
 			}
-			else {updateCounter = 170}
-			player.loadTexture('player4', 1)
+			else {updateCounter = 170
+				player.loadTexture('player4', 1)
+			}
 		}
 		else if(player.key === 'player4') {
 			if(player.inAir === false && platformName === 'platform4') {
@@ -119,8 +121,9 @@ Game.Play.prototype = {
 				updateCounter = 0
 				player.loadTexture('player', 1)
 			}
-			else{updateCounter = 170}
-			player.loadTexture('player2', 1)
+			else{updateCounter = 170
+				player.loadTexture('player2', 1)
+			}
 		}
 	}
 	updateCounter++
