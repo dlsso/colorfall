@@ -90,7 +90,7 @@ Game.Play.prototype = {
 	    player.inAir = true;
 	}
 
-	if(cursors.down.isDown && updateCounter > 100){
+	if(cursors.down.isDown && updateCounter > 180){
 		if(player.key === 'player') {
 			player.loadTexture('player2', 1)
 			updateCounter = 0
