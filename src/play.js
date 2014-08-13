@@ -33,7 +33,7 @@ Game.Play.prototype = {
 	// bottomKill = killZones.create(0, h + 30, 'platform');
 	// bottomKill.scale.setTo(w, 1);
 	// bottomKill.body.immovable = true;
-	bottom = this.createPlatform(0, h+30, 'platform')
+	bottom = this.createPlatform(0, h+30, w, '')
 	bottom.body.immovable = true
 
 
