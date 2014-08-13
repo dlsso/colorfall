@@ -195,11 +195,11 @@ Game.Play.prototype = {
 	    bgGreen -= 2;
 	}
 	else {
-	    if (bgRed > 25) {
+	    if (bgRed > 35) {
 		bgRed -= 2;
 	    }
 	    else {
-		bgRed = 24;
+		bgRed = 34;
 	    }
 
 	    if (bgGreen > 35) {
@@ -216,6 +216,8 @@ Game.Play.prototype = {
 		bgBlue = 34;
 	    }
 	}
+
+	console.log("bgRed, bgGreen, bgBlue:", bgRed, bgGreen, bgBlue)
 
 	color = '#' + bgRed.toString(16) + bgGreen.toString(16) + bgBlue.toString(16);
 	game.stage.backgroundColor = color;
