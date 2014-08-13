@@ -89,22 +89,22 @@ Game.Play.prototype = {
 
 	if(cursors.down.isDown && updateCounter > 60){
 		if(player.key === 'player') {
-			if(player.inAir === false) { player.y = player.y + 7}
+			if(player.inAir === false) { player.y = player.y + platformVelocity/10}
 			player.loadTexture('player2', 1)
 			updateCounter = 0
 		}
 		else if(player.key === 'player2') {
-			if(player.inAir === false) { player.y = player.y + 7}	
+			if(player.inAir === false) { player.y = player.y + platformVelocity/10}	
 			player.loadTexture('player3', 1)
 			updateCounter = 0
 		}
 		else if(player.key === 'player3') {
-			if(player.inAir === false) { player.y = player.y + 7}
+			if(player.inAir === false) { player.y = player.y + platformVelocity/10}
 			player.loadTexture('player4', 1)
 			updateCounter = 0
 		}
 		else if(player.key === 'player4') {
-			if(player.inAir === false) { player.y = player.y + 7}
+			if(player.inAir === false) { player.y = player.y + platformVelocity/10}
 			player.loadTexture('player2', 1)
 			updateCounter = 0
 		}
@@ -172,7 +172,6 @@ Game.Play.prototype = {
 	    game.add.tween(player.scale).to({x: 1, y: 0.8}, 50, null, true, 0, false, false).to({x: 1, y: 1}, 200, null, true, 0, false, false);
 	}
 	platformName = platform.key
-	console.log("platformName:", platformName)
     },
     
     updateBackground: function () {
