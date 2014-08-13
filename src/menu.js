@@ -41,7 +41,7 @@ Game.Menu.prototype = {
 	    game.add.tween(attr).to({ alpha: 1 }, 400, null, true, 1200, 0, false);
 	}
 
-	toggleMusic = game.add.text(20, h - 18, 'Toggle music with UP', { font: '12px Arial', fill: '#aaccff' });
+	toggleMusic = game.add.text(20, h - 18, 'Toggle music with UP, color with DOWN', { font: '12px Arial', fill: '#aaccff' });
 	toggleMusic.anchor.setTo(0, 0);
 	toggleMusic.alpha  = 0;
 	game.add.tween(toggleMusic).to({ alpha: 1 }, 400, null, true, 1200, 0, false);
@@ -59,7 +59,7 @@ Game.Menu.prototype = {
 	player.body.gravity.y = 1000;
 	player.frame = 1;
 	
-	controls = game.add.text(w / 2, -400, 'LEFT and RIGHT to move\nDOWN to begin or pass through same color platform\n(only once every few seconds)', { font: '18px Arial', fill: '#f59', align: 'center' });
+	controls = game.add.text(w / 2, -400, 'LEFT and RIGHT to move', { font: '18px Arial', fill: '#f59', align: 'center' });
 	controls.anchor.setTo(0.472, 1);
 
 	scoreText = game.add.text(w - 10, 10, 'score: ' + score, { font: '20px Arial', fill: '#333' });

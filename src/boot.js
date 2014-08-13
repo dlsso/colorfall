@@ -1,7 +1,7 @@
 Game = {};
 
-var w = 600;
-var h = 400;
+var w = window.innerWidth;
+var h = window.innerHeight;
 
 var score = 0;
 var bestScore = 0;
