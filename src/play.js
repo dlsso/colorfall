@@ -194,28 +194,38 @@ Game.Play.prototype = {
 	    bgRed += 3;
 	    bgGreen -= 2;
 	}
-	else {
-	    if (bgRed > 35) {
-		bgRed -= 2;
-	    }
-	    else {
-		bgRed = 34;
-	    }
-
-	    if (bgGreen > 35) {
-		bgGreen -= 2;
-	    }
-	    else {
-		bgGreen = 34;
-	    }
-
-	    if (bgBlue > 35) {
-		bgBlue -= 2;
-	    }
-	    else {
-		bgBlue = 34;
-	    }
+	else if (score < 91) {
+	    // bgBlue += 1;
+	    bgRed -= 3;
+	    bgGreen += 2;
 	}
+	else if (score < 121) {
+	    bgBlue += 1;
+	    // bgRed += 3;
+	    bgGreen -= 2;
+	}
+	// else {
+	//     if (bgRed > 35) {
+	// 	bgRed -= 2;
+	//     }
+	//     else {
+	// 	bgRed = 34;
+	//     }
+
+	//     if (bgGreen > 35) {
+	// 	bgGreen -= 2;
+	//     }
+	//     else {
+	// 	bgGreen = 34;
+	//     }
+
+	//     if (bgBlue > 35) {
+	// 	bgBlue -= 2;
+	//     }
+	//     else {
+	// 	bgBlue = 34;
+	//     }
+	// }
 
 	console.log("bgRed, bgGreen, bgBlue:", bgRed, bgGreen, bgBlue)
 
