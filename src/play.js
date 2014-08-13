@@ -71,6 +71,7 @@ Game.Play.prototype = {
     update: function () {
 	game.physics.arcade.collide(player, sides);
 	game.physics.arcade.collide(player, topKill, this.endGame, null, this);
+	game.physics.arcade.collide(player, bottomKill, this.hitPlatform, null, this);
 	game.physics.arcade.overlap(topKill, platforms, this.deletePlatform, null, this);
 	game.physics.arcade.collide(player, platforms, this.hitPlatform, null, this);
 
