@@ -7,7 +7,7 @@ var increase = 1.008;
 var bgRed;
 var bgGreen;
 var bgBlue;
-var updateCounter = 0
+var updateCounter = 170
 var platformName = ''
 
 Game.Play.prototype = {
