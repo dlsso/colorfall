@@ -3,7 +3,7 @@ Game.Play = function (game) { };
 var platformVelocity;
 var num_platforms = 150;
 var variance = 8;
-var increase = 1;
+var increase = 1.5;
 var bgRed;
 var bgGreen;
 var bgBlue;
