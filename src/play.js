@@ -218,14 +218,14 @@ Game.Play.prototype = {
     },
 
     scoreBonus: function () {
-    	if(updateCounter>100){
-    		score +=5
-    		updateCounter = 0
+   //  	if(updateCounter>100){
+   //  		score +=5
+   //  		updateCounter = 0
     		
-		    if (score > bestScore) {
-			bestScore = score;
-		    }
-    	}
+		 //    if (score > bestScore) {
+			// bestScore = score;
+		 //    }
+   //  	}
     },
 
     endGame: function () {
