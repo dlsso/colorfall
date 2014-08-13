@@ -100,7 +100,7 @@ Game.Play.prototype = {
 				player.y = player.y + 5 - platformVelocity/10
 				updateCounter = 0
 			}
-			else {updateCounter = 90}
+			else {updateCounter = 170}
 			player.loadTexture('player3', 1)
 		}
 		else if(player.key === 'player3') {
@@ -108,7 +108,7 @@ Game.Play.prototype = {
 				player.y = player.y + 5 - platformVelocity/10
 				updateCounter = 0
 			}
-			else {updateCounter = 90}
+			else {updateCounter = 170}
 			player.loadTexture('player4', 1)
 		}
 		else if(player.key === 'player4') {
@@ -116,7 +116,7 @@ Game.Play.prototype = {
 				player.y = player.y + 5 - platformVelocity/10
 				updateCounter = 0
 			}
-			else{updateCounter = 90}
+			else{updateCounter = 170}
 			player.loadTexture('player2', 1)
 		}
 	}
