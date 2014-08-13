@@ -1,5 +1,4 @@
 GENERAL
-- clean up code
+Add special effect for scoring bonus points
 
 MOBILE
-- mobile responsiveness

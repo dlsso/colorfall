@@ -59,7 +59,7 @@ Game.Menu.prototype = {
 	player.body.gravity.y = 1000;
 	player.frame = 1;
 	
-	controls = game.add.text(w / 2, -400, 'LEFT and RIGHT to move\nDOWN to begin', { font: '20px Arial', fill: '#f59', align: 'center' });
+	controls = game.add.text(w / 2, -400, 'LEFT and RIGHT to move\nDOWN to begin or change color', { font: '14px Arial', fill: '#f59', align: 'center' });
 	controls.anchor.setTo(0.472, 1);
 
 	scoreText = game.add.text(w - 10, 10, 'score: ' + score, { font: '20px Arial', fill: '#333' });
