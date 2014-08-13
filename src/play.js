@@ -30,9 +30,9 @@ Game.Play.prototype = {
 	topKill = killZones.create(0, -43, 'platform');
 	topKill.scale.setTo(w, 1);
 	topKill.body.immovable = true;
-	// bottomKill = killZones.create(0, h + 30, 'platform');
-	// bottomKill.scale.setTo(w, 1);
-	// bottomKill.body.immovable = true;
+	bottomKill = killZones.create(0, h + 30, 'platform');
+	bottomKill.scale.setTo(w, 1);
+	bottomKill.body.immovable = true;
 	
 
 
@@ -66,12 +66,11 @@ Game.Play.prototype = {
 	bgBlue = 255;
 
 	cursors.up.onDown.add(Game.Menu.prototype.toggleAudio, this);
-	this.createPlatform(marker, y, 8, '2')
     },
 
     update: function () {
 	game.physics.arcade.collide(player, sides);
-	game.physics.arcade.collide(player, killZones, this.endGame, null, this);
+	game.physics.arcade.collide(player, topKill, this.endGame, null, this);
 	game.physics.arcade.overlap(topKill, platforms, this.deletePlatform, null, this);
 	game.physics.arcade.collide(player, platforms, this.hitPlatform, null, this);
 
