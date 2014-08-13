@@ -92,7 +92,7 @@ Game.Play.prototype = {
 			updateCounter = 0
 		}
 		else if(player.key === 'player2') {
-			if(player.inAir === false) { player.y = player.y + 2}	
+			if(player.inAir === false) { console.log(player.y)}	
 			player.loadTexture('player3', 1)
 			updateCounter = 0
 		}
