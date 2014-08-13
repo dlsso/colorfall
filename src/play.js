@@ -210,8 +210,6 @@ Game.Play.prototype = {
 	    bgGreen += 1;
 	}
 
-	console.log("bgRed, bgGreen, bgBlue:", bgRed, bgGreen, bgBlue)
-
 	color = '#' + bgRed.toString(16) + bgGreen.toString(16) + bgBlue.toString(16);
 	game.stage.backgroundColor = color;
     },
