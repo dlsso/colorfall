@@ -218,7 +218,7 @@ Game.Play.prototype = {
     },
 
     scoreBonus: function () {
-    	if(updateCounter<60){
+    	if(updateCounter>60){
     		score +=5
     		updateCounter = 0
     	}
