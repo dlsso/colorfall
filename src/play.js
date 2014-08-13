@@ -47,7 +47,7 @@ Game.Play.prototype = {
 	player = game.add.sprite(playerStart, h - 20, 'player');
 	player.anchor.setTo(0.5, 1);
 	game.physics.arcade.enable(player);
-	player.body.gravity.y = 1000;
+	player.body.gravity.y = 1500;
 	player.inAir = true;
 	player.frame = 1;
 
