@@ -17,7 +17,7 @@ Game.Menu.prototype = {
 	title.anchor.setTo(0.5, 0);
 	game.add.tween(title).to({ y: 5 }, 750, null, true, 0, 0, false);
 
-	by = game.add.text(w / 2 + 18, h, 'a twist on Skylifts from Christopher Hinstorff', { font: '24px Arial', fill: '#fe5' });
+	by = game.add.text(w / 2 + 18, h, 'based on the game Skylifts', { font: '24px Arial', fill: '#fe5' });
 	by.anchor.setTo(0.5, 0);
 	game.add.tween(by).to({ y: 96 }, 500, null, true, 500, 0, false);
 

@@ -195,11 +195,11 @@ Game.Play.prototype = {
 	    bgGreen -= 2;
 	}
 	else {
-	    if (bgRed > 35) {
+	    if (bgRed > 25) {
 		bgRed -= 2;
 	    }
 	    else {
-		bgRed = 34;
+		bgRed = 24;
 	    }
 
 	    if (bgGreen > 35) {
