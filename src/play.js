@@ -92,7 +92,7 @@ Game.Play.prototype = {
 			updateCounter = 0
 		}
 		else if(player.key === 'player2') {
-			game.physics.arcade.collide(player, platforms, this.deletePlatform, null, this);
+			if(player.inAir === false) { player.y = player.y + 2}	
 			player.loadTexture('player3', 1)
 			updateCounter = 0
 		}
