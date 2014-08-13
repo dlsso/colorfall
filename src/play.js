@@ -3,7 +3,7 @@ Game.Play = function (game) { };
 var platformVelocity;
 var num_platforms = 150;
 var variance = 8;
-var increase = 5.0;
+var increase = 2;
 var bgRed;
 var bgGreen;
 var bgBlue;
@@ -171,7 +171,7 @@ Game.Play.prototype = {
 		bestScore = score;
 	    }
 
-	    platformVelocity += increase;
+	    platformVelocity -= increase;
 	    
 	    this.updateBackground();
 	}
