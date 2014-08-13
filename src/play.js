@@ -33,7 +33,7 @@ Game.Play.prototype = {
 	// bottomKill = killZones.create(0, h + 30, 'platform');
 	// bottomKill.scale.setTo(w, 1);
 	// bottomKill.body.immovable = true;
-	bottom = this.createPlatform(0, 30, 20, '2')
+	
 
 
 	platforms = game.add.group();
@@ -66,7 +66,7 @@ Game.Play.prototype = {
 	bgBlue = 255;
 
 	cursors.up.onDown.add(Game.Menu.prototype.toggleAudio, this);
-
+	bottom = this.createPlatform(0, 30, 20, '2')
     },
 
     update: function () {
