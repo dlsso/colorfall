@@ -90,7 +90,7 @@ Game.Play.prototype = {
 	    player.inAir = true;
 	}
 
-	if(cursors.down.isDown && updateCounter > 60){
+	if(cursors.down.isDown && updateCounter > 40){
 		if(player.key === 'player') {
 			player.loadTexture('player2', 1)
 			updateCounter = 0
@@ -218,7 +218,7 @@ Game.Play.prototype = {
     },
 
     scoreBonus: function () {
-    	if(updateCounter>60){
+    	if(updateCounter>100){
     		score +=5
     		updateCounter = 0
     	}
